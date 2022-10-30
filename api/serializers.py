@@ -5,7 +5,7 @@ from .models import Interview, Summary, ToolsExtraction
 class InterviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Interview
-        fields = ('id', 'candidate_name', 'interview', 'position'
+        fields = ('id', 'candidate_name', 'interview', 'position',
                   'date_created', 'date_modified')
         read_only_fields = ('date_created', 'date_modified')
 
